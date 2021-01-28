@@ -1,0 +1,15 @@
+{
+  "name": "restaurant-webpack",
+  "version": "1.0.0",
+  "description": "Restaurant webpack layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sergio Obolevich <sergioobolevich@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  }
+}
