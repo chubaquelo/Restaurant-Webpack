@@ -2,46 +2,40 @@ import loadIndex from './loadIndex.js';
 import loadAboutUs from "./loadAboutUs.js";
 import loadMeals from "./loadMeals";
 import loadContactUs from "./loadContactUs";
-
-// Assigning foreign methods to variables.
-const indexContent = loadIndex();
-const aboutUsContent = loadAboutUs();
-const mealsContent = loadMeals();
-const contactUsContent = loadContactUs();
+import header from "./_header";
+import footer from "./_footer";
 
 // Index default load
+const body = document.querySelector("body");
 const mainDiv = document.querySelector("#content");
-mainDiv.appendChild(indexContent);
+body.prepend(header);
+mainDiv.appendChild(loadIndex);
+body.append(footer);
 
 // Functions for menus
-const goToHome = () => {
+const goToIndex = () => {
   mainDiv.textContent = "";
-  mainDiv.appendChild(indexContent);
-  addMenuListeners();
-}
+  mainDiv.appendChild(loadIndex);
+};
 
 const goToAbout = () => {
   mainDiv.textContent = "";
-  mainDiv.appendChild(aboutUsContent);
-  addMenuListeners();
+  mainDiv.appendChild(loadAboutUs);
 }
 
 const goToMeals = () => {
   mainDiv.textContent = "";
-  mainDiv.appendChild(mealsContent);
-  addMenuListeners();
+  mainDiv.appendChild(loadMeals);
 };
 
 const goToContactUs = () => {
   mainDiv.textContent = "";
-  mainDiv.appendChild(contactUsContent);
-  addMenuListeners();
+  mainDiv.appendChild(loadContactUs);
 }
 
-// Event listener for header nav 
-const addMenuListeners = () => {
+// Event listener for header nav
   const btnHome = document.querySelector("li:first-of-type");
-  btnHome.addEventListener("click", goToHome);
+  btnHome.addEventListener("click", goToIndex);
 
   const btnAboutUs = document.querySelector("li:nth-of-type(2)");
   btnAboutUs.addEventListener("click", goToAbout);
@@ -51,6 +45,3 @@ const addMenuListeners = () => {
 
   const btnContactUs = document.querySelector("li:last-of-type");
   btnContactUs.addEventListener("click", goToContactUs);
-}
-
-addMenuListeners();
