@@ -21,6 +21,7 @@ Clone this repository in your computer
 ```
 $  git clone https://github.com/chubaquelo/Restaurant-Webpack
 ```
+Install the npm dependencies if you are gonna change the source code.
 Access the folder where you cloned the project in your explorer and open ./dist/index.html
 
 ## Authors
