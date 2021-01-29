@@ -15,14 +15,15 @@ function loadContactUs() {
   img.src = "./img/pidgeon.jpg";
 
   h1.textContent = "Contact Us";
-  p.textContent = "You can scream out loud with our name, phone us or send a pidgeon with your order.";
+  p.textContent =
+    "You can scream out loud with our name, phone us or send a pidgeon with your order.";
 
   content.append(main);
   main.append(welcomeClass);
   welcomeClass.append(h1, welcomeContentClass);
   welcomeContentClass.append(p, img);
-  
+
   return content;
-};
+}
 
 module.exports = loadContactUs();

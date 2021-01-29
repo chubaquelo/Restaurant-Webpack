@@ -15,14 +15,15 @@ function loadMeals() {
   p.className = "welcome-text";
 
   h1.textContent = "Our Meals";
-  p.textContent = "We have all kind of meals. Pizza, sandwiches, pasta, ice cream, and tomato flowers.";
+  p.textContent =
+    "We have all kind of meals. Pizza, sandwiches, pasta, ice cream, and tomato flowers.";
 
   content.append(main);
   main.append(welcomeClass);
   welcomeClass.append(h1, welcomeContentClass);
   welcomeContentClass.append(p, img);
-  
+
   return content;
-};
+}
 
 module.exports = loadMeals();
