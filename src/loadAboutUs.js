@@ -1,3 +1,4 @@
+import aboutImg from "./img/about-us.jpg";
 function loadAboutUs() {
   const mainDiv = document.querySelector('#content');
   mainDiv.textContent = '';
@@ -12,7 +13,7 @@ function loadAboutUs() {
   p.className = 'welcome-text';
   const img = document.createElement('img');
   img.className = 'about-img';
-  img.src = './img/about-us.jpg';
+  img.src = aboutImg;
 
   h1.textContent = 'About Us';
   p.textContent = 'We are the oldest restaurant on earth. We cook from rats to caviar, just ask.';
@@ -25,4 +26,4 @@ function loadAboutUs() {
   return content;
 }
 
-module.exports = loadAboutUs();
+export default loadAboutUs();

@@ -1,3 +1,5 @@
+import mealsImg from './img/meals.jpg';
+
 function loadMeals() {
   const mainDiv = document.querySelector('#content');
   mainDiv.textContent = '';
@@ -11,7 +13,7 @@ function loadMeals() {
   const p = document.createElement('p');
   const img = document.createElement('img');
   img.className = 'meals-img';
-  img.src = './img/meals.jpg';
+  img.src = mealsImg;
   p.className = 'welcome-text';
 
   h1.textContent = 'Our Meals';
@@ -25,4 +27,4 @@ function loadMeals() {
   return content;
 }
 
-module.exports = loadMeals();
+export default loadMeals();

@@ -1,3 +1,4 @@
+import restoImg from "./img/restaurant.jpg";
 function loadIndex() {
   const content = document.createElement('div');
   const main = document.createElement('main');
@@ -7,7 +8,7 @@ function loadIndex() {
   const welcomeContentClass = document.createElement('div');
   welcomeContentClass.className = 'welcome-content';
   const img = document.createElement('img');
-  img.src = './img/restaurant.jpg';
+  img.src = restoImg;
   const p = document.createElement('p');
   p.className = 'welcome-text';
 
@@ -22,4 +23,4 @@ function loadIndex() {
   return content;
 }
 
-module.exports = loadIndex();
+export default loadIndex();

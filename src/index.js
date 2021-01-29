@@ -4,6 +4,7 @@ import loadMeals from './loadMeals';
 import loadContactUs from './loadContactUs';
 import header from './_header';
 import footer from './_footer';
+import "./style.css";
 
 // Index default load
 const body = document.querySelector('body');

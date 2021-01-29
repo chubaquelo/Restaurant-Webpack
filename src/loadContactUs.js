@@ -1,3 +1,5 @@
+import pidgeonImg from "./img/pidgeon.jpg";
+
 function loadContactUs() {
   const mainDiv = document.querySelector('#content');
   mainDiv.textContent = '';
@@ -12,7 +14,7 @@ function loadContactUs() {
   p.className = 'welcome-text';
   const img = document.createElement('img');
   img.className = 'contact-img';
-  img.src = './img/pidgeon.jpg';
+  img.src = pidgeonImg;
 
   h1.textContent = 'Contact Us';
   p.textContent = 'You can scream out loud with our name, phone us or send a pidgeon with your order.';
@@ -25,4 +27,4 @@ function loadContactUs() {
   return content;
 }
 
-module.exports = loadContactUs();
+export default loadContactUs();
