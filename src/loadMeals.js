@@ -1,6 +1,6 @@
 import mealsImg from './img/meals.jpg';
 
-function loadMeals() {
+const loadMeals = () => {
   const mainDiv = document.querySelector('#content');
   mainDiv.textContent = '';
   const content = document.createElement('div');
@@ -27,4 +27,4 @@ function loadMeals() {
   return content;
 }
 
-export default loadMeals();
+export default loadMeals;

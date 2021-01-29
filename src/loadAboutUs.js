@@ -1,5 +1,5 @@
 import aboutImg from "./img/about-us.jpg";
-function loadAboutUs() {
+const loadAboutUs = () => {
   const mainDiv = document.querySelector('#content');
   mainDiv.textContent = '';
   const content = document.createElement('div');
@@ -26,4 +26,4 @@ function loadAboutUs() {
   return content;
 }
 
-export default loadAboutUs();
+export default loadAboutUs;

@@ -10,28 +10,28 @@ import "./style.css";
 const body = document.querySelector('body');
 const mainDiv = document.querySelector('#content');
 body.prepend(header);
-mainDiv.appendChild(loadIndex);
+mainDiv.appendChild(loadIndex());
 body.append(footer);
 
 // Functions for menus
 const goToIndex = () => {
   mainDiv.textContent = '';
-  mainDiv.appendChild(loadIndex);
+  mainDiv.appendChild(loadIndex());
 };
 
 const goToAbout = () => {
   mainDiv.textContent = '';
-  mainDiv.appendChild(loadAboutUs);
+  mainDiv.appendChild(loadAboutUs());
 };
 
 const goToMeals = () => {
   mainDiv.textContent = '';
-  mainDiv.appendChild(loadMeals);
+  mainDiv.appendChild(loadMeals());
 };
 
 const goToContactUs = () => {
   mainDiv.textContent = '';
-  mainDiv.appendChild(loadContactUs);
+  mainDiv.appendChild(loadContactUs());
 };
 
 // Event listener for header nav

@@ -1,5 +1,5 @@
 import restoImg from "./img/restaurant.jpg";
-function loadIndex() {
+const loadIndex = () => {
   const content = document.createElement('div');
   const main = document.createElement('main');
   const welcomeClass = document.createElement('div');
@@ -21,6 +21,6 @@ function loadIndex() {
   welcomeContentClass.append(img, p);
 
   return content;
-}
+};
 
-export default loadIndex();
+export default loadIndex;

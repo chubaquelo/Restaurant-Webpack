@@ -1,6 +1,6 @@
 import pidgeonImg from "./img/pidgeon.jpg";
 
-function loadContactUs() {
+const loadContactUs = () => {
   const mainDiv = document.querySelector('#content');
   mainDiv.textContent = '';
   const content = document.createElement('div');
@@ -27,4 +27,4 @@ function loadContactUs() {
   return content;
 }
 
-export default loadContactUs();
+export default loadContactUs;
