@@ -1,4 +1,5 @@
-import aboutImg from "./img/about-us.jpg";
+import aboutImg from './img/about-us.jpg';
+
 const loadAboutUs = () => {
   const mainDiv = document.querySelector('#content');
   mainDiv.textContent = '';
@@ -24,6 +25,6 @@ const loadAboutUs = () => {
   welcomeContentClass.append(p, img);
 
   return content;
-}
+};
 
 export default loadAboutUs;

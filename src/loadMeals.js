@@ -25,6 +25,6 @@ const loadMeals = () => {
   welcomeContentClass.append(p, img);
 
   return content;
-}
+};
 
 export default loadMeals;

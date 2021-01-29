@@ -1,4 +1,5 @@
-import restoImg from "./img/restaurant.jpg";
+import restoImg from './img/restaurant.jpg';
+
 const loadIndex = () => {
   const content = document.createElement('div');
   const main = document.createElement('main');

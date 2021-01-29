@@ -35,13 +35,18 @@ h1 {
   display: flex;
   margin-top: 5%;
 }
+
 .welcome-content-second {
   display: flex;
   flex-direction: column;
 }
-.meals-img, .about-img, .contact-img {
+
+.meals-img,
+.about-img,
+.contact-img {
   margin: 20px auto;
 }
+
 .welcome-text {
   padding-left: 15px;
   font-size: 1.3em;
@@ -55,5 +60,4 @@ img {
 footer {
   width: 100%;
   text-align: center;
-  
 }

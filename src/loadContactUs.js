@@ -1,4 +1,4 @@
-import pidgeonImg from "./img/pidgeon.jpg";
+import pidgeonImg from './img/pidgeon.jpg';
 
 const loadContactUs = () => {
   const mainDiv = document.querySelector('#content');
@@ -25,6 +25,6 @@ const loadContactUs = () => {
   welcomeContentClass.append(p, img);
 
   return content;
-}
+};
 
 export default loadContactUs;
